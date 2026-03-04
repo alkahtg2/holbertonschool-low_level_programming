@@ -6,5 +6,5 @@
  */
 void reset_to_98(int *n)
 {
-    *n = 98;  /* dereference the pointer and assign 98 */
+    *n = 98;
 }
