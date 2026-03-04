@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers from 1 to 100 with FizzBuzz rules
+ *main - prints numbers from 1 to 100 with FizzBuzz rules
  *
- * Return: 0
+ *Return: 0
  */
 int main(void)
 {
