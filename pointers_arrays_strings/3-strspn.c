@@ -11,26 +11,28 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int i, j, count;
+int found;
 
-count = 0; /* initialize the counter */
+count = 0; /* initialize counter */
 
 for (i = 0; s[i] != '\0'; i++)
 {
-int found = 0; /* flag to check if s[i] is in accept */
+found = 0; /* reset flag for each s[i] */
 
 for (j = 0; accept[j] != '\0'; j++)
 {
 if (s[i] == accept[j])
 {
-found = 1; /* character found in accept */
-break; /* no need to check remaining accept */
+found = 1; /* character is in accept */
+break;/* no need to check further */
+}
 }
 
 if (found)
 count++;
 else
-break; /* stop when character not in accept */
+break; /* stop at first non-matching character */
 }
 
-return (count);
+return (count); /* make sure we return count at the end */
 }
