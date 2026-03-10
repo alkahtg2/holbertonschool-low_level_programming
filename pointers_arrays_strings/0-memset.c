@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
 * _memset - fills the first n bytes of the memory area pointed to by s
@@ -11,29 +11,12 @@
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int i;  // counter to iterate through each byte
+unsigned int i; /* counter to iterate through each byte */
 
-// loop through the first n bytes
 for (i = 0; i < n; i++)
 {
-s[i] = b;  // set each byte to the value b
+s[i] = b; /* set each byte to the value b */
 }
 
-return s;  // return the pointer to the start of the memory
-}
-
-/* Example usage */
-int main(void)
-{
-char buffer[10];
-
-// fill the first 6 bytes with 'X'
-_memset(buffer, 'X', 6);
-
-// print all 10 bytes to see the result
-for (int i = 0; i < 10; i++)
-printf("%c ", buffer[i]);
-printf("\n");
-
-return 0;
+return s; /* return the pointer to the start of the memory */
 }
