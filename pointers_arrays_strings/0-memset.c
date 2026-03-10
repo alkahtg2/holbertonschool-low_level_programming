@@ -18,5 +18,5 @@ for (i = 0; i < n; i++)
 s[i] = b; /* set each byte to the value b */
 }
 
-return s; /* return the pointer to the start of the memory */
+return (s); /* return the pointer to the start of the memory */
 }
